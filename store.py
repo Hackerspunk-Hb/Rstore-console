@@ -24,3 +24,5 @@ echo -e ">>>>>> Restoring METASPLOIT is completed <<<<<<"|lolcat
 echo " "
 pg_ctl -D $PREFIX/var/lib/postgresql start
 ./msfconsole
+
+**BY ~ HACKERSPUNK**
