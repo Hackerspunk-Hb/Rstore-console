@@ -11,4 +11,4 @@ Repair - Reinstall Metasploit in your Termux
 * apt install git -y
 * git clone https://github.com/Punker-Bhai/Rstore-console
 * cd Rstore-console
-* bash store.sh
+* bash console.sh
