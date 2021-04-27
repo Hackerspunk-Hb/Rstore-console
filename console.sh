@@ -55,7 +55,7 @@ find "$PREFIX"/lib/ruby/gems -type f -iname \*.so -print0 | xargs -0 -r termux-e
 echo "Creating database"
 
 mkdir -p $msfpath/metasploit-framework/config && cd $msfpath/metasploit-framework/config
-curl -LO https://github.com/Hackerspunk-Hb/blacky-console/blob/main/data.yml
+curl -LO https://github.com/netslutter/blacky-console/blob/main/data.yml
 
 mkdir -p $PREFIX/var/lib/postgresql
 pg_ctl -D "$PREFIX"/var/lib/postgresql stop > /dev/null 2>&1 || true
@@ -77,8 +77,7 @@ cd ${PREFIX}/bin && cd $HOME/blacky-console && chmod +x msfconsole
 ln -sf $(which msfconsole) $PREFIX/bin/msfvenom
 
 echo "TYPE ./msfconsole | ./msfvenom to use it"
-echo "If You like our work then follow us on Instagram >instagram.com/myquotes.hb"
-echo "🅷🅰🅲🅺🅴🆁🆂🅿🆄🅽🅺"
+echo "If You like our work then follow us on Instagram >instagram.com/netslutter"
 
 gem install rubygems-update
 update_rubygems
@@ -93,5 +92,3 @@ echo -e ">>>>>> Restoring METASPLOIT is completed <<<<<<"|lolcat
 echo " "
 pg_ctl -D $PREFIX/var/lib/postgresql start
 ./msfconsole
-
-**BY ~ HACKERSPUNK**
